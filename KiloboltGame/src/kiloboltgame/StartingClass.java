@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.net.URL;
 import java.util.ArrayList;
+
 import kiloboltgame.framework.Animation;
 
 public class StartingClass extends Applet implements Runnable, KeyListener {
@@ -105,7 +106,7 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 				currentSprite = anim.getImage();
 			}
 
-			ArrayList projectiles = robot.getProjectiles();
+			ArrayList<Projectile> projectiles = robot.getProjectiles();
 			for (int i = 0; i < projectiles.size(); i++) {
 				Projectile p = (Projectile) projectiles.get(i);
 				if (p.isVisible() == true) {

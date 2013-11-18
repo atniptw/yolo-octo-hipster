@@ -182,7 +182,7 @@ public class Robot {
 		this.movingLeft = movingLeft;
 	}
 
-	public ArrayList getProjectiles() {
+	public ArrayList<Projectile> getProjectiles() {
 		return projectiles;
 	}
 
