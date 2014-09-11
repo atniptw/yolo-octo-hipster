@@ -156,7 +156,7 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 		g.drawImage(background, bg1.getBgX(), bg1.getBgY(), this);
 		g.drawImage(background, bg2.getBgX(), bg2.getBgY(), this);
 
-		ArrayList projectiles = robot.getProjectiles();
+		ArrayList<Projectile> projectiles = robot.getProjectiles();
 		for (int i = 0; i < projectiles.size(); i++) {
 			Projectile p = (Projectile) projectiles.get(i);
 			g.setColor(Color.YELLOW);
