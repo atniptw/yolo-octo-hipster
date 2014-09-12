@@ -31,12 +31,18 @@ public class DrawingView extends View {
 
     public DrawingView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        setupDrawing();
         init(attrs, 0);
     }
 
     public DrawingView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
+    }
+
+    private void setupDrawing(){
+        /* get drawing area setup for interaction */
+
     }
 
     private void init(AttributeSet attrs, int defStyle) {
